@@ -14,9 +14,6 @@
     var ascImageUrl = "http://tablesorter.com/themes/blue/asc.gif";
     var descImageUrl = "http://tablesorter.com/themes/blue/desc.gif";
     var styles = '<style type="text/css"><!--table.tablesorter{font-family:arial;background-color:#CDCDCD;width:100%;text-align:left;}table.tablesorter tfoot tr th,table.tablesorter thead tr th{background-color:#e6EEEE;}table.tablesorter thead tr .tablesorter-headerUnSorted{background-image:url(\'' + bgImageUrl + '\');background-repeat:no-repeat;background-position:center right;cursor:pointer;}table.tablesorter thead tr .tablesorter-headerAsc{background-image:url(\'' + ascImageUrl + '\');background-repeat:no-repeat;background-position:center right;cursor:pointer;}table.tablesorter thead tr .tablesorter-headerDesc{background-image:url(\'' + descImageUrl + '\');background-repeat:no-repeat;background-position:center right;cursor:pointer;}--></style>';
-    var fontAwsome = '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">';
-    var reloadTable = function() {
-    };
     $.tablesorter.addParser({
         id: 'date',
         is: function(s) {
@@ -44,10 +41,8 @@
         type: 'number'
     });
     $(document).ready(function() {
-        $('head link:last').after(fontAwsome);
         $('head link:last').after(styles);
         $('.pullrequest-list').addClass('tablesorter');
-        $('.pullrequest-list').change(reloadTable);
         $('.pullrequest-list').tablesorter({
             headers: {
                 3: {
