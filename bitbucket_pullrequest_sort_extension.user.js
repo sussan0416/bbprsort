@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         BitBucket Pull Requests Sort 拡張
-// @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
+// @namespace    bbprsort.sutchan.com.github
+// @version      0.2
+// @description  BitBucketのプルリクエストのテーブルをソートする拡張
 // @author       Takahiro Suzuki
 // @match        https://bitbucket.org/dashboard/pullrequests*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
